@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    /* color: white; */
+    font-family: Arial;
+    font-size: 1.1em;
+}
+
+body {
+    display: grid;
+    overflow: hidden;
+    margin: 0px;
+    /*
+    grid-template-columns: ??????;
+    grid-template-rows: ??????;
+    grid-template-areas:  ??????;
+    */
+    height: 100vh;
+}
+
+
+@media screen and (max-width: 800px) {
+  body{
+    grid-template-columns: auto;
+    grid-template-areas:
+      "primary"
+      "bottom":
+  }
+  aside{
+    display: none;
+  }
+  header{
+    width: 100vw;
+    background-color: teal;
+  }
+}
